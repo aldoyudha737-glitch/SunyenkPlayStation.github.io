@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sunyenk PlayStation & Warkop - Main PS bareng dan ngopi di Warkop Sunyenk! ☕🎮">
+    <meta name="keywords" content="warkop, playstation, sunyenk, gamer, cyberpunk">
+    <meta name="author" content="Sunyenk PlayStation & Warkop">
+    <!-- Tambahan untuk GitHub Pages: Meta tags SEO dasar -->
+    <title>Sunyenk PlayStation & Warkop - Linktree Gamer</title>
+    
+    <!-- Google Fonts: Orbitron untuk judul, Share Tech Mono untuk teks -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Share+Tech+Mono:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome CDN untuk ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* Reset dan body styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Share Tech Mono', monospace;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            text-align: center;
+            overflow-x: hidden;
+        }
+        
+        /* Container utama untuk responsivitas */
+        .container {
+            max-width: 400px;
+            width: 100%;
+            padding: 20px;
+        }
+        
+        /* Foto profil */
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid #00ffff; /* Neon cyan border */
+            box-shadow: 
+                0 0 20px #00ffff, 
+                inset 0 0 20px rgba(0, 255, 255, 0.1); /* Glow effect */
+            margin: 0 auto 20px;
+            object-fit: cover; /* Untuk memastikan gambar ter-crop dengan baik */
+        }
+        
+        /* Nama dengan efek neon glow */
+        .name {
+            font-family: 'Orbitron', monospace;
+            font-size: 2.5em;
+            font-weight: 700;
+            margin-bottom: 10px;
+            text-shadow: 
+                0 0 10px #00ffff, 
+                0 0 20px #00ffff, 
+                0 0 30px #00ffff;
+            letter-spacing: 2px;
+        }
+        
+        /* Bio */
+        .bio {
+            font-size: 1.1em;
+            margin-bottom: 40px;
+            opacity: 0.9;
+            line-height: 1.4;
+        }
+        
+        /* Container untuk links */
+        .links {
+            list-style: none;
+            width: 100%;
+        }
+        
+        /* Styling umum untuk tombol links */
+        .links a {
+            display: block;
+            margin: 15px 0;
+            padding: 15px 20px;
+            text-decoration: none;
+            color: #ffffff;
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 1.1em;
+            font-weight: 700;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .links a::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s;
+        }
+        
+        .links a:hover::before {
+            left: 100%;
+        }
+        
+        .links a:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+        }
+        
+        /* Ikon umum */
+        .links i {
+            margin-right: 10px;
+            font-size: 1.2em;
+        }
+        
+        /* Instagram: Pink accent */
+        .instagram {
+            background: linear-gradient(45deg, #E4405F, #833AB4);
+            border: 2px solid #E4405F;
+            box-shadow: 0 0 15px rgba(228, 64, 95, 0.5);
+        }
+        
+        .instagram:hover {
+            box-shadow: 0 0 25px rgba(228, 64, 95, 0.8);
+            border-color: #ffffff;
+        }
+        
+        /* WhatsApp: Green accent */
+        .whatsapp {
+            background: linear-gradient(45deg, #25D366, #128C7E);
+            border: 2px solid #25D366;
+            box-shadow: 0 0 15px rgba(37, 211, 102, 0.5);
+        }
+        
+        .whatsapp:hover {
+            box-shadow: 0 0 25px rgba(37, 211, 102, 0.8);
+            border-color: #ffffff;
+        }
+        
+        /* Lokasi: Pinkish red accent (merah muda) */
+        .location {
+            background: linear-gradient(45deg, #FF69B4, #FF1493);
+            border: 2px solid #FF69B4;
+            box-shadow: 0 0 15px rgba(255, 105, 180, 0.5);
+        }
+        
+        .location:hover {
+            box-shadow: 0 0 25px rgba(255, 105, 180, 0.8);
+            border-color: #ffffff;
+        }
+        
+        /* Responsif untuk mobile */
+        @media (max-width: 480px) {
+            .container {
+                padding: 10px;
+            }
+            
+            .name {
+                font-size: 2em;
+            }
+            
+            .bio {
+                font-size: 1em;
+            }
+            
+            .profile-pic {
+                width: 120px;
+                height: 120px;
+            }
+            
+            .links a {
+                padding: 12px 15px;
+                font-size: 1em;
+            }
+        }
+        
+        /* Animasi fade-in sederhana (opsional, pure CSS) */
+        .container {
+            animation: fadeIn 1s ease-in;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Kustomisasi: Foto profil. Ganti src dengan URL gambar lain jika diperlukan -->
+        <img src="https://i.postimg.cc/QMn8Z5GF/IMG-20251002-WA0003.jpg" alt="Profil Sunyenk" class="profile-pic">
+        
+        <!-- Kustomisasi: Nama profil -->
+        <h1 class="name">Sunyenk PlayStation & Warkop</h1>
+        
+        <!-- Kustomisasi: Bio -->
+        <p class="bio">Main PS bareng? Ngopi dulu di Warkop Sunyenk! ☕🎮</p>
+        
+        <!-- Kustomisasi: Daftar tautan. Ganti href sesuai link asli -->
+        <ul class="links">
+            <li>
+                <a href="https://www.instagram.com/sunyenkplaystation?igsh=Ym14NDJ0cGlrNHhz" class="instagram" target="_blank">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+            </li>
+            <li>
+                <a href="https://wa.me/6281234259600" class="whatsapp" target="_blank">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
+            </li>
+            <li>
+                <a href="https://maps.app.goo.gl/vKq28XdK9sspUn9u9" class="location" target="_blank">
+                    <i class="fas fa-map-marker-alt"></i> Lokasi
+                </a>
+            </li>
+        </ul>
+    </div>
+    
+    <!-- Tidak ada JavaScript diperlukan, semua efek dengan CSS. Tambahkan jika butuh interaksi lebih lanjut -->
+</body>
+</html>
